@@ -13,7 +13,7 @@ MONGO_PORT: 27017
 
 API_PORT: 8080
 HEROKU: False
-REDIS_URI: "redis-11820.c252.ap-southeast-1-1.ec2.cloud.redislabs.com:11820"
+REDIS_URI: "redis://Steven-free-db:OHFgx57GfTTfXQg7CUnbiEdHZz5Y9Y3S@redis-11820.c252.ap-southeast-1-1.ec2.cloud.redislabs.com:11820"
 REDIS_PORT: 6379
 REDIS_PASS: "OHFgx57GfTTfXQg7CUnbiEdHZz5Y9Y3S"
 REDIS_DB_FSM: 1
