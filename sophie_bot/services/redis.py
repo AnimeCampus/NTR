@@ -1,6 +1,6 @@
 import sys
-from redis import redis
-import redis as redis_lib
+from redis import Redis
+import Redis as redis_lib
 from sophie_bot import log
 from sophie_bot.config import get_str_key, get_int_key, get_bool_key
 
