@@ -18,6 +18,7 @@
 
 import sys
 
+from redis import Redis
 import redis as redis_lib
 
 from sophie_bot import log
@@ -53,6 +54,6 @@ if get_bool_key("HEROKU") is False:
 )
 
 try:
-    redis.ping()
+    Redis.ping()
 except redis_lib.ConnectionError:
     sys.exit(log.critical("Can't connect to RedisDB! Exiting..."))
