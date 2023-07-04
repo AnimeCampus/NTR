@@ -33,6 +33,6 @@ if get_bool_key("HEROKU") is False:
     )
 
 try:
-    redis_lib.ping()
+    redis.ping()
 except redis_lib.ConnectionError:
     sys.exit(log.critical("Can't connect to RedisDB! Exiting..."))
