@@ -32,7 +32,3 @@ if get_bool_key("HEROKU") is False:
         db=get_int_key("REDIS_DB_FSM")
     )
 
-try:
-    redis.ping()
-except redis_lib.ConnectionError:
-    sys.exit(log.critical("Can't connect to RedisDB! Exiting..."))
